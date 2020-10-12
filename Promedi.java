@@ -28,6 +28,7 @@ public class Promedi {
 	          promT += promedio;
 	          cont ++;
 	         }
+	         
 	         float promeTotal = promT / 19; //Se divide promT entre la cantidad de estudiantes.
 	         System.out.println("El promedio general es: "+promeTotal); //Se imprime el promedio general del curso.
 	         br.close(); //Cerramos nuestra secuencia.
@@ -40,8 +41,9 @@ public class Promedi {
 	   
 	   public static void main(String[] args) {
 	      String csvFile = "C:\\Users\\ASUS\\Documents\\Universidad\\IV semestre\\Programación\\java\\Programacion\\src\\Promedio\\PromedioCSV.csv"; //Se busca el archivo a leer.
-	      Promedi prueba1 = null;
-		prueba1.read(csvFile);
+	      @SuppressWarnings("unused")
+		Promedi prueba1 = null;
+		Promedi.read(csvFile);
 	      
 	   }
 	}
